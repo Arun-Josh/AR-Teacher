@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AR Tutor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+<!-- added -->
+   
+
+<!-- Added -->
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Biology
+      </a>
+      <div class="dropdown-menu">
+        <a onclick="Biology_1()" class="dropdown-item" href="#">Brain</a>
+        <a onclick="Biology_2()" class="dropdown-item" href="#">Neuron</a>
+        <a onclick="Biology_3()" class="dropdown-item" href="#">Skeleton</a>
+      </div>
+    </li>
+           <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Physics
+      </a>
+      <div class="dropdown-menu">
+        <a onclick="Physics_1()" class="dropdown-item" href="#">Steam Engine</a>
+        <a onclick="Physics_2()" class="dropdown-item" href="#">Link 2</a>
+        <a onclick="Physics_3()" class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+            <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Chemistry
+      </a>
+      <div class="dropdown-menu">
+        <a onclick="Chemistry_1()" class="dropdown-item" href="#">Dimpled Rhombic Triacontahedron</a>
+        <a onclick="Chemistry_2()"class="dropdown-item" href="#">Atoms</a>
+      </div>
+    </li>
+            <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dinosaurs
+      </a>
+      <div class="dropdown-menu">
+        <a onclick="dino_1()" class="dropdown-item" href="#">Suchominus</a>
+        <a onclick="dino_2()" class="dropdown-item" href="#">Velociraptor</a>
+      </div>
+    </li>
+                <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Air Crafts
+      </a>
+      <div class="dropdown-menu">
+        <a onclick="craft_1()" class="dropdown-item" href="#">Aeroplane</a>
+        <a onclick="craft_2()" class="dropdown-item" href="#">Helicopter</a>
+        <!-- <a onclick="craft_3()" class="dropdown-item" href="#">Rocket</a> -->
+      </div>
+    </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="overflow-y: hidden;">
+      <iframe id="source" src="links/inner.html" style="border: 0; position:fixed; top:0; left:0; right:0; bottom:0;height: 100%;width: 100%"></iframe>
+
+    </div>
+    <!-- /.container -->
+ 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+    // Biology Models
+        function Biology_1() {
+          document.getElementById("source").src = "links/Biology_1.html";
+        } 
+        function Biology_2() {
+          document.getElementById("source").src = "links/Biology_2.html";
+        }     
+        function Biology_3() {
+          document.getElementById("source").src = "links/Biology_3.html";
+        }
+
+    // Physics Models
+        function Physics_1() {
+          document.getElementById("source").src = "links/Physics_1.html";
+        } 
+        function Physics_2() {
+          document.getElementById("source").src = "links/Physics_2.html";
+        }     
+        function Physics_3() {
+          document.getElementById("source").src = "links/Physics_3.html";
+        }        
+
+      // Chemistry Models   
+        function Chemistry_1() {
+          document.getElementById("source").src = "links/Chemistry_11.html";
+        } 
+        function Chemistry_2() {
+          document.getElementById("source").src = "links/Chemistry_2.html";
+        }     
+        function Chemistry_3() {
+          document.getElementById("source").src = "links/Chemistry_3.html";
+        }
+
+      // Dinosaur Models
+        function dino_1() {
+          document.getElementById("source").src = "links/dino_1.html";
+        } 
+        function dino_2() {
+          document.getElementById("source").src = "links/dino_2.html";
+        }     
+        function dino_3() {
+          document.getElementById("source").src = "links/dino_3.html";
+        }
+
+        // Ari Craft
+        function craft_1(){
+          document.getElementById("source").src = "links/craft_1.html";
+        }
+        function craft_2(){
+          document.getElementById("source").src = "links/craft_2.html";
+        }
+
+  </script>
+ 
+
+  </body>
+
+</html>

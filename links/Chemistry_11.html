@@ -1,0 +1,29 @@
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<!-- Animation -->
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  
+  <!-- <a-scene stats> -->
+<div id="myEmbeddedScene">
+    <a-scene arjs="debugUIEnabled: false" embedded arjs>
+      <!-- define your gltf asset -->
+    <a-assets crossorigin="anonymous">
+      <!-- <a-asset-item id="knight-obj" src="/model/knight/knight.obj"></a-asset-item> -->
+      <!-- <a-asset-item id="knight-mtl" src="/model/knight/knight.mtl"></a-asset-item> -->
+      <audio src="audio/Rhombictriacontahedron.mp3" autoplay></audio>
+      <!-- <a-asset-item id="tree" src="model/baby_groot/scene.gltf"></a-asset-item> -->
+    </a-assets>
+
+
+    <a-entity gltf-model="url(models/Chemistry_11/scene.gltf)" animation-mixer scale = "0.04 0.04 0.04 0.04"></a-entity>
+
+      <!-- define a camera which will move according to the marker position -->
+      <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+</div>
+</body>
+
